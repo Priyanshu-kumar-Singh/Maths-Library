@@ -56,7 +56,7 @@ void preCompute()
     ll fact = 1; 
     factorial[0] = 1; 
     inverse[0] = 1; 
-    for (ll i = 1; i <= MAXN; i++) { 
+    for (ll i = 1; i < MAXN; i++) { 
         fact = (fact * i) % mod; 
         factorial[i] = fact; 
         inverse[i] = binpow(factorial[i], mod - 2); 
